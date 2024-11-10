@@ -201,14 +201,11 @@ SELECT branch_no, COUNT(emp_id) FROM employee GROUP BY branch_no;
 SELECT customer.Customer_name FROM customer INNER JOIN issuestatus ON 
 customer.Customer_Id = issuestatus.Issued_cust WHERE issuestatus.Issue_date >= '2023-06-01' AND 
 issuestatus.Issue_date <= '2023-06-30';
-
-# 9. Retrieve book_title from book table containing 'history'.
+9. Retrieve book_title from book table containing 'history'.
 SELECT book_title FROM books WHERE Category = 'history';
 
-# 10.Retrieve the branch numbers along with the count of employees for branches having more than 5 employees.
+10.Retrieve the branch numbers along with the count of employees for branches having more than 5 employees.
 SELECT branch_no, COUNT(emp_id) FROM employee GROUP BY branch_no HAVING COUNT(Emp_id) > 5;
 
-
-# End
-
+ End
 
